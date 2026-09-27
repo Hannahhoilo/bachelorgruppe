@@ -14,8 +14,13 @@ type Props = {
 
 export default function TeamMember({ name, image, onPressProfile }: Props) {
   return (
-    <View className="items-center w-36 mb-5">
-      <Image source={image} className="w-32 h-32 rounded-xl mb-2 shadow-md" />
+    <View className="items-center mb-6" style={{ width: 140 }}>
+      <Image
+        source={image}
+        className="rounded-xl mb-2"
+        style={{ width: 128, height: 128 }}
+        resizeMode="cover"
+      />
       <Text className="font-semibold text-base mb-1">{name}</Text>
       <Pressable onPress={onPressProfile}>
         <Text className="text-gray-600">Se profil ❯</Text>

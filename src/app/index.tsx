@@ -1,6 +1,7 @@
 import { ScrollView, View } from "react-native";
 import Header from "../components/layout/Header";
 import TeamMember from "../components/team/TeamMember";
+import StudyPlanSection from "../components/layout/StudyPlanSection";
 
 const team = [
   { name: "Hannah", image: require("../../assets/images/team/hannah.jpg") },
@@ -19,6 +20,7 @@ export default function HomeScreen() {
           <TeamMember key={member.name} {...member} />
         ))}
       </View>
+      <StudyPlanSection />
     </ScrollView>
   );
 }
