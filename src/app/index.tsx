@@ -3,11 +3,11 @@ import Header from "../components/layout/Header";
 import TeamMember from "../components/team/TeamMember";
 
 const team = [
-  { name: "Rikke", imageUrl: "https://via.placeholder.com/150" },
-  { name: "Hannah", imageUrl: "https://via.placeholder.com/150" },
-  { name: "Robyn", imageUrl: "https://via.placeholder.com/150" },
-  { name: "Sunniva", imageUrl: "https://via.placeholder.com/150" },
-  { name: "Tora", imageUrl: "https://via.placeholder.com/150" },
+  { name: "Hannah", image: require("../../assets/images/team/hannah.jpg") },
+  { name: "Rikke", image: require("../../assets/images/team/rikke.jpg") },
+  { name: "Robyn", image: require("../../assets/images/team/robyn.jpg") },
+  { name: "Sunniva", image: require("../../assets/images/team/sunniva.jpg") },
+  { name: "Tora", image: require("../../assets/images/team/tora.jpg") },
 ];
 
 export default function HomeScreen() {
