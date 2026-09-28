@@ -9,12 +9,14 @@ const team = [
   {
     name: "Hannah Høilo",
     image: require("../../assets/images/team/hannah.jpg"),
-    description: "Hannah har før hun begynte på bacheloren allerede gått et år på Kristianias Fagskole, på et årsstudium innen Frontend. På 4. tok hun valgfagene C i Linux, Python, Algorithms and Data Structures og IT- og prosjektledelse. Hannah har gjennom skolegangen jobbet som studentassistend, der hun veileder studenter i emner hun har hatt tidligere. På fritiden har hun som regel godt plantet foran PlayStation eller på treningssenteret.",
+    description:
+      "Hannah har før hun begynte på bacheloren allerede gått et år på Kristianias Fagskole, på et årsstudium innen Frontend. På 4. tok hun valgfagene C i Linux, Python, Algorithms and Data Structures og IT- og prosjektledelse. Hannah har gjennom skolegangen jobbet som studentassistend, der hun veileder studenter i emner hun har hatt tidligere. På fritiden har hun som regel godt plantet foran PlayStation eller på treningssenteret.",
   },
   {
     name: "Rikke Christensen Foyn",
     image: require("../../assets/images/team/rikke.jpg"),
-    description: "Infor om Rikke kommer.",
+    description:
+      "Rikke har allerede en bachelorgrad i økonomi og administrasjon, og har derfor en ekstra interesse for skjæringspunktet mellom forretning og teknologi. Hun er engasjert og nysgjerrig, og trives i team hvor det er rom for å være kreativ. På fritiden sier hun sjelden nei til en filmkveld, eller en tur til utlandet.",
   },
   {
     name: "Robyn Kristoffersen",
@@ -31,7 +33,8 @@ const team = [
   {
     name: "Tora Nordhagen Vang",
     image: require("../../assets/images/team/tora.jpg"),
-    description: "Info om Tora kommer.",
+    description:
+      "Tora er en nysgjerrig person som liker å utfordre seg selv og prøve nye ting. Hun liker også å engasjere seg utenfor studiene og har de siste to årene sittet i styret i studentforeningen Kvinner & IT. Hun trives best sammen med andre og bruker mye av fritiden på venner og trening, spesielt løping. Hun er også glad i å reise og setter pris på de små gledene i hverdagen.",
   },
 ];
 
