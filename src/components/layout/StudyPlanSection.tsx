@@ -6,10 +6,10 @@ export default function StudyPlanSection() {
   return (
     <View className="p-4">
       <Text className="text-xl font-bold text-center mb-1">
-        Bachelor i informasjonsteknologi:
+        Bachelor i Informasjonsteknologi Frontend- og mobilutvikling
       </Text>
       <Text className="text-gray-500 text-center mb-6">
-        Frontend- og mobilutvikling: trykk på et emne for å lese mer 
+        Trykk på et emne for å lese mer
       </Text>
 
       {studyPlan.map((semester) => (

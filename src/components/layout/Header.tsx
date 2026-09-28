@@ -1,5 +1,5 @@
-import { View, Text, Pressable, Linking } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
+import { Linking, Pressable, Text, View } from "react-native";
 
 export default function Header() {
   return (
@@ -13,14 +13,9 @@ export default function Header() {
           Vår Bachelorgruppe
         </Text>
         <Text className="text-base text-left text-lime-200 leading-6">
-          Vi er fem bachelorstudenter i frontend- og mobilutvikling ved
-          Høyskolen Kristiania. Våren 2027 skal vi jobbe med et avsluttende
-          prosjekt der vi går i dybden på fagområdet vårt og bruker det vi har
-          lært til å løse en reell utfordring for en bedrift. Vi er sultne på
-          kunnskap, og ønsker å benytte oss av denne muligheten til å lære så
-          mye som mulig! Har dere en idé dere ikke har hatt tid til å realisere,
-          en manuell prosess som burde vært digital, eller et verktøy dere
-          skulle ønske fantes?
+          Vi er fem engasjerte studenter på siste året av Frontend- og
+          mobilutvikling ved Høyskolen Kristiania, og ser nå etter en bedrift å
+          samarbeide med gjennom bachelorprosjektet vårt.
         </Text>
 
         <View className="mt-6 mb-2 items-start">
