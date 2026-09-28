@@ -42,19 +42,19 @@ export default function CourseAccordion({
     <Pressable
       onPress={toggle}
       style={{ flexGrow, flexBasis: 140 }}
-      className="bg-blue-50 border border-gray-300 active:bg-blue-100"
+      className="bg-soft border border-highlight active:bg-white"
     >
       <View className="p-3">
-        <Text className="font-semibold text-center">{name}</Text>
-        <Text className="text-gray-500 text-center text-xs mt-1">
+        <Text className="font-semibold text-center text-primary">{name}</Text>
+        <Text className="text-brand text-center text-xs mt-1">
           {credits} sp
         </Text>
       </View>
       {isOpen && (
-        <View className="px-3 pb-3 border-t border-gray-300 pt-2">
+        <View className="px-3 pb-3 border-t border-highlight pt-2">
           <Text className="text-gray-700 text-sm leading-5">{description}</Text>
           <Pressable onPress={() => Linking.openURL(url)} className="mt-2">
-            <Text className="font-bold text-blue-600">Gå til emneside</Text>
+            <Text className="font-bold text-brand">Gå til emneside</Text>
           </Pressable>
         </View>
       )}
