@@ -14,7 +14,7 @@ const team = [
   {
     name: "Rikke Christensen Foyn",
     image: require("../../assets/images/team/rikke.jpg"),
-    description: "Skriv en kort presentasjon av Rikke her.",
+    description: "Infor om Rikke kommer.",
   },
   {
     name: "Robyn Kristoffersen",
@@ -31,7 +31,7 @@ const team = [
   {
     name: "Tora Nordhagen Vang",
     image: require("../../assets/images/team/tora.jpg"),
-    description: "Skriv en kort presentasjon av Tora her.",
+    description: "Info om Tora kommer.",
   },
 ];
 
