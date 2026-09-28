@@ -1,12 +1,12 @@
 import { useState } from "react";
 import {
-  View,
-  Text,
   Image,
-  Pressable,
-  Modal,
-  ScrollView,
   ImageSourcePropType,
+  Modal,
+  Pressable,
+  ScrollView,
+  Text,
+  View,
 } from "react-native";
 
 type Props = {
@@ -26,7 +26,15 @@ export default function TeamMember({ name, image, description }: Props) {
         style={{ width: 128, height: 128 }}
         resizeMode="cover"
       />
-      <Text className="font-semibold text-base mb-1 text-primary">{name}</Text>
+
+      {/* minHeight gir plass til to linjer, så "Se profil" står likt på alle */}
+      <Text
+        className="font-semibold text-base text-primary text-center mb-1"
+        style={{ minHeight: 48 }}
+        numberOfLines={2}
+      >
+        {name}
+      </Text>
 
       <Pressable
         onPress={() => setIsOpen(true)}
@@ -43,13 +51,11 @@ export default function TeamMember({ name, image, description }: Props) {
         onRequestClose={() => setIsOpen(false)}
       >
         <View className="flex-1 items-center justify-center p-6">
-          {/* Mørk bakgrunn trykk utenfor kortet for å lukke */}
           <Pressable
             className="absolute inset-0 bg-black/60"
             onPress={() => setIsOpen(false)}
           />
 
-          {/* Selve popup-kortet */}
           <View
             className="bg-white rounded-2xl w-full max-w-sm overflow-hidden"
             style={{ maxHeight: "85%" }}
@@ -63,7 +69,7 @@ export default function TeamMember({ name, image, description }: Props) {
                 style={{ width: 240, height: 240 }}
                 resizeMode="cover"
               />
-              <Text className="text-2xl font-bold text-primary mb-2">
+              <Text className="text-2xl font-bold text-primary text-center mb-2">
                 {name}
               </Text>
               <Text className="text-gray-700 text-center leading-6 mb-5">

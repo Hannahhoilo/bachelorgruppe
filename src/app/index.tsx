@@ -2,8 +2,8 @@ import { ScrollView, View } from "react-native";
 import Header from "../components/layout/Header";
 import TeamMember from "../components/team/TeamMember";
 import StudyPlanSection from "../components/layout/StudyPlanSection";
-import ProgramInfoSection from "../components/layout/Info";
 import Info from "../components/layout/Info";
+import Footer from "@/components/layout/Footer";
 
 const team = [
   {
@@ -48,7 +48,9 @@ export default function HomeScreen() {
         ))}
       </View>
       <Info />
-      <StudyPlanSection />
+      <Footer>
+        <StudyPlanSection />
+      </Footer>
     </ScrollView>
   );
 }
