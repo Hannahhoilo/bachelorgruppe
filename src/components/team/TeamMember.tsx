@@ -43,7 +43,7 @@ export default function TeamMember({ name, image, description }: Props) {
         onRequestClose={() => setIsOpen(false)}
       >
         <View className="flex-1 items-center justify-center p-6">
-          {/* Mørk bakgrunn – trykk utenfor kortet for å lukke */}
+          {/* Mørk bakgrunn trykk utenfor kortet for å lukke */}
           <Pressable
             className="absolute inset-0 bg-black/60"
             onPress={() => setIsOpen(false)}

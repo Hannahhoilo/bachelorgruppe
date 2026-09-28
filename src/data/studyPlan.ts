@@ -22,7 +22,7 @@ export const studyPlan: Semester[] = [
         url: "https://www.kristiania.no/studieportal/fakultet-for-helse-og-teknologi/bachelorniva/pgr102/introduksjon-til-programmering?year=2025&period=Fall&_gl=1*1trxqsx*_up*MQ..*_ga*MzMwMDMyNzM5LjE3OTA1MTc1MjA.*_ga_QT9WL23P1M*czE3OTA1MTc1MTQkbzEkZzAkdDE3OTA1MTc1MTQkajYwJGwwJGgyMDMwOTAyOTk4",
       },
       {
-        name: "Databaserrr",
+        name: "Databaser",
         credits: 7.5,
         description:
           "Design og bruk av relasjonsdatabaser, SQL-spørringer, normalisering og datamodellering.",
