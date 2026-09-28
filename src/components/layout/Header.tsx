@@ -1,7 +1,20 @@
 import { LinearGradient } from "expo-linear-gradient";
-import { Linking, Pressable, Text, View } from "react-native";
+import {
+  Image,
+  Linking,
+  Pressable,
+  Text,
+  useWindowDimensions,
+  View,
+} from "react-native";
+
+const BREAKPOINT = 768; // px: under denne bredden regnes skjermen som mobil
+const ICON_SIZE = { mobile: 40, desktop: 56 }; // px
 
 export default function Header() {
+  const { width } = useWindowDimensions();
+  const iconSize = width < BREAKPOINT ? ICON_SIZE.mobile : ICON_SIZE.desktop;
+
   return (
     <LinearGradient
       colors={["#35366b", "#00B4D8"]}
@@ -9,9 +22,18 @@ export default function Header() {
       end={{ x: 1, y: 1 }}
     >
       <View className="px-8 py-12 md:py-16 items-start w-full max-w-3xl self-center">
-        <Text className="w-full text-4xl md:text-5xl font-bold text-left md:text-center mb-5 text-lime-200">
-          Bachelorgruppe 2027
-        </Text>
+
+        <View className="flex-row items-center gap-3 md:gap-4 w-full justify-start md:justify-center mb-5">
+          <Image
+            source={require("../../../assets/images/favicon.png")}
+            resizeMode="contain"
+            style={{ width: iconSize, height: iconSize, borderRadius: 10 }}
+          />
+          <Text className="shrink text-4xl md:text-5xl font-bold text-left md:text-center text-lime-200">
+            Bachelorgruppe 2027
+          </Text>
+        </View>
+
         <Text className="w-full text-lg text-left md:text-center text-lime-200 leading-7">
           Vi er fem engasjerte studenter på siste året av Frontend- og
           mobilutvikling ved Høyskolen Kristiania, og ser nå etter en bedrift å
@@ -20,7 +42,7 @@ export default function Header() {
 
         <View className="mt-8 mb-2 items-start md:items-center self-start md:self-center">
           <Text className="text-2xl font-extrabold text-left md:text-center text-lime-200 mb-2">
-            Kontakt oss
+            Ta kontakt
           </Text>
 
           <Text className="text-lg text-left md:text-center text-lime-200 leading-7">
