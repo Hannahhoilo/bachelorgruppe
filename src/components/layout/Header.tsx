@@ -1,3 +1,4 @@
+import { Link } from "expo-router";
 import { LinearGradient } from "expo-linear-gradient";
 import {
   Image,
@@ -22,16 +23,19 @@ export default function Header() {
       end={{ x: 1, y: 1 }}
     >
       <View className="px-8 py-12 md:py-16 items-start w-full max-w-3xl self-center">
-
-        <View className="flex-row items-center gap-3 md:gap-4 w-full justify-start md:justify-center mb-5">
-          <Image
-            source={require("../../../assets/images/favicon.png")}
-            resizeMode="contain"
-            style={{ width: iconSize, height: iconSize, borderRadius: 10 }}
-          />
-          <Text className="shrink text-4xl md:text-5xl font-bold text-left md:text-center text-lime-200">
-            Bachelorgruppe 2027
-          </Text>
+        <View className="w-full items-start md:items-center mb-5">
+          <Link href="/" asChild>
+            <Pressable className="flex-row items-center gap-3 md:gap-4 active:opacity-70">
+              <Image
+                source={require("../../../assets/images/favicon.png")}
+                resizeMode="contain"
+                style={{ width: iconSize, height: iconSize, borderRadius: 10 }}
+              />
+              <Text className="shrink text-4xl md:text-5xl font-bold text-left md:text-center text-lime-200">
+                Bachelorgruppe 2027
+              </Text>
+            </Pressable>
+          </Link>
         </View>
 
         <Text className="w-full text-lg text-left md:text-center text-lime-200 leading-7">
