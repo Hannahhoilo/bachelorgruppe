@@ -22,12 +22,11 @@ export default function TeamMember({ name, image, description }: Props) {
     <View className="items-center mb-6" style={{ width: 140 }}>
       <Image
         source={image}
-        className="rounded-xl mb-2 border-2 border-highlight"
+        className="rounded-xl mb-2 border-2 border-highlight "
         style={{ width: 128, height: 128 }}
         resizeMode="cover"
       />
 
-      {/* minHeight gir plass til to linjer, så "Se profil" står likt på alle */}
       <Text
         className="font-semibold text-base text-primary text-center mb-1"
         style={{ minHeight: 48 }}
@@ -35,14 +34,12 @@ export default function TeamMember({ name, image, description }: Props) {
       >
         {name}
       </Text>
-
       <Pressable
         onPress={() => setIsOpen(true)}
-        className="px-3 py-1 rounded-full hover:bg-soft active:bg-soft"
+        className="px-3 py-1 rounded-full transition-transform duration-150 ease-out hover:bg-soft hover:scale-105 active:bg-soft"
       >
         <Text className="text-brand font-medium">Se profil ❯</Text>
       </Pressable>
-
       <Modal
         visible={isOpen}
         transparent
