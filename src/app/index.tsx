@@ -10,7 +10,7 @@ const team = [
     name: "Hannah Høilo",
     image: require("../../assets/images/team/hannah.jpg"),
     description:
-      "Hannah har før hun begynte på bacheloren allerede gått et år på Kristianias Fagskole, på et årsstudium innen Frontend. På 4. tok hun valgfagene C i Linux, Python, Algorithms and Data Structures og IT- og prosjektledelse. Hannah har gjennom skolegangen jobbet som studentassistend, der hun veileder studenter i emner hun har hatt tidligere. På fritiden har hun som regel godt plantet foran PlayStation eller på treningssenteret.",
+      "Hannah har før hun begynte på bacheloren allerede gått et år på Kristianias Fagskole, på et årsstudium innen Frontend. På hennes 4. semester tok hun valgfagene C i Linux, Python, Algorithms and Data Structures og IT- og prosjektledelse. Hannah har gjennom skolegangen jobbet som studentassistent, der hun veileder studenter i emner hun har hatt tidligere. På fritiden har hun som regel godt plantet foran PlayStation eller på treningssenteret.",
   },
   {
     name: "Rikke Christensen Foyn",
