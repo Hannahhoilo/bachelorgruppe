@@ -22,7 +22,7 @@ const team = [
     name: "Robyn Kristoffersen",
     image: require("../../assets/images/team/robyn.jpg"),
     description:
-      "Robyn er en positiv og nysgjerrig person som liker å være kreativ og finne gode løsninger. Hun trives godt med å jobbe sammen med andre, men liker også å fordype meg i ting og lære nye teknologier. På fritiden er Robyn glad i hunder, gaming og kreative prosjekter.",
+      "Robyn er en positiv og nysgjerrig person som liker å være kreativ og finne gode løsninger. Hun trives godt med å jobbe sammen med andre, men liker også å fordype seg i ting og lære nye teknologier. På fritiden er Robyn glad i hunder, gaming og kreative prosjekter.",
   },
   {
     name: "Sunniva Eide Martin",
